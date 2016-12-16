@@ -1,0 +1,32 @@
+class modle
+{
+  int a = 10;
+  public void message()
+  {
+    
+   
+    System.out.println("sample");
+  }
+  
+}
+
+class NullExceptionProgram {
+  public static void main(String[] args) 
+ {
+    
+    modle obj1 = new modle();
+    System.out.println(obj1.a);
+    try
+    {
+    obj1 = null;
+   // modle obj = null;
+   System.out.println(obj1.a);
+    }
+    catch(Exception good)
+    {
+      System.out.println("Sorry! You are trying to point invalid reference " + good);
+      
+    }
+    
+  }
+}
